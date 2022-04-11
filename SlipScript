@@ -1,0 +1,6 @@
+script.Parent.Touched:Connect(function(hit)
+	if game.Players:GetPlayerFromCharacter(hit.Parent) then
+		hit.Parent.Humanoid.Sit = true
+	end
+end)
+
